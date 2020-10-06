@@ -1,0 +1,20 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreatePostDTO {
+  post_id: String!
+  album_name: String!
+  user_id_vk: Float!
+}
+
+type Mutation {
+  createPostToVk(input: CreatePostDTO!): String!
+  createPostToInsta(input: CreatePostDTO!): String!
+  createPostToFB(input: CreatePostDTO!): String!
+  createPostInAll(input: CreatePostDTO!): String!
+}
+
+type Query {
+  Social: String!
+}
